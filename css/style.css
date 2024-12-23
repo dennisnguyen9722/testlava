@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.lava {
+    width: 300px;
+    height: 250px;
+    background: url("../images/bg.jpg");
+    position: relative;
+}
+
+.header-left {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: start;
+}
+
+.header-center {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.header-right {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.spin {
+    position: absolute;
+    bottom: 0;
+}
