@@ -39,5 +39,71 @@
 
 .spin {
     position: absolute;
-    bottom: 0;
+    bottom: -70px;
+    animation: spin 1s;
+    right: -85px;
+}
+
+.spinner {
+    position: absolute;
+    right: -20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.promotion {
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    animation: promotion 2s cubic-bezier(1, 0.01, 0, 1);
+}
+
+@keyframes promotion {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+    150% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.text-1 {
+    position: absolute;
+    animation: run 1s 1;
+}
+
+.text-2 {
+    position: absolute;
+    animation: zoom 2s cubic-bezier(1, 0.01, 0, 1);
+}
+
+@keyframes run {
+    0% {
+        opacity: 0;
+        left: -180px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
