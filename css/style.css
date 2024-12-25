@@ -40,7 +40,7 @@
 .spin {
     position: absolute;
     bottom: -70px;
-    animation: spin 1s;
+    animation: spin 1s infinite;
     right: -85px;
 }
 
@@ -62,7 +62,7 @@
     position: absolute;
     right: -60px;
     bottom: -60px;
-    animation: promotion 2s cubic-bezier(1, 0.01, 0, 1);
+    animation: promotion 2s cubic-bezier(1, 0.01, 0, 1) infinite;
 }
 
 @keyframes promotion {
@@ -80,12 +80,12 @@
 
 .text-1 {
     position: absolute;
-    animation: run 1s 1;
+    animation: run 3s ease infinite
 }
 
 .text-2 {
     position: absolute;
-    animation: zoom 2s cubic-bezier(1, 0.01, 0, 1);
+    animation: zoom 4s ease infinite
 }
 
 @keyframes run {
@@ -93,17 +93,35 @@
         opacity: 0;
         left: -180px;
     }
-    100% {
+    25% {
         opacity: 1;
         left: 0;
+    }
+    50% {
+        scale: 90%;
+    }
+    75% {
+        scale: 100%;
+    }
+    100% {
+        scale: 90%;
     }
 }
 
 @keyframes zoom {
     0% {
-        transform: scale(0);
+        scale: 0%;
+    }
+    25% {
+        scale: 100%;
+    }
+    50% {
+        scale: 90%;
+    }
+    75% {
+        scale: 100%;
     }
     100% {
-        transform: scale(1);
+        scale: 90%;
     }
 }
